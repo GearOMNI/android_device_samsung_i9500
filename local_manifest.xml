@@ -11,8 +11,10 @@
   <remove-project path="hardware/samsung_slsi/exynos5" name="platform/hardware/samsung_slsi/exynos5" />
   <project name="GearCM/proprietary_vendor_samsung" path="vendor/samsung" remote="github" revision="cm-11.0" />
   <remove-project path="frameworks/native" name="android_frameworks_native" />
+  <remove-project path="frameworks/av" name="android_frameworks_av" />
   <remove-project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" />
   <project name="GearOMNI/android_frameworks_native" path="frameworks/native" remote="github" revision="android-4.4" />
+  <project name="GearOMNI/android_frameworks_av" path="frameworks/av" remote="github" revision="android-4.4" />
   <project name="GearOMNI/android_hardware_libhardware_legacy" path="hardware/libhardware_legacy" remote="github" revision="android-4.4" />
   
   <!-- LINARO TOOLCHAIN -->
