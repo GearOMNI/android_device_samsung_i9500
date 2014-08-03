@@ -131,6 +131,19 @@ TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_RECOVERY_SWIPE := true
 DEVICE_RESOLUTION := 1080x1920
 
+# SELinux
+BOARD_SEPOLICY_DIRS += \
+    device/samsung/i9500/sepolicy
+
+BOARD_SEPOLICY_UNION := \
+    file_contexts \
+    device.te \
+    domain.te \
+    gpsd.te \
+    mediaserver.te \
+    surfaceflinger.te \
+    system.te
+
 # Charging mode
 BOARD_BATTERY_DEVICE_NAME := battery
 BOARD_CHARGER_ENABLE_SUSPEND := true
