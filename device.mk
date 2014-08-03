@@ -144,7 +144,7 @@ PRODUCT_PACKAGES += \
 
 # Torch
 PRODUCT_PACKAGES += \
-    Torch
+    OmniTorch
 
 # Wifi
 PRODUCT_PACKAGES += \
@@ -168,18 +168,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # This is a 16.16 fixed point number
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.opengles.version=131072
-
-# Disable SELinux	
-PRODUCT_PROPERTY_OVERRIDES += \
-	ro.build.selinux=0
-    
-# Development & ADB authentication settings
-ADDITIONAL_DEFAULT_PROPERTIES += \
-	ro.debuggable=1 \
-	ro.adb.secure=0 \
-	ro.secure=0 \
-	ro.allow.mock.location=0 \
-	ro.build.selinux=0
 
 # System properties
 PRODUCT_PROPERTY_OVERRIDES += \
