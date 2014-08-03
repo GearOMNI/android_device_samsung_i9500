@@ -14,31 +14,31 @@
   {
     "remote": "omnirom",
     "repository": "android_hardware_samsung_slsi_exynos",
-    "target_path": "hardware/samsung_slsi/exynos"
+    "target_path": "hardware/samsung_slsi/exynos",
     "revision": "android-4.4"
   },
   {
     "remote": "omnirom",
     "repository": "android_hardware_samsung_slsi_exynos5-insignal",
-    "target_path": "hardware/samsung_slsi/exynos5-insignal"
+    "target_path": "hardware/samsung_slsi/exynos5-insignal",
     "revision": "android-4.4"
   },
   {
     "remote": "omnirom",
     "repository": "android_hardware_samsung_slsi_exynos5410",
-    "target_path": "hardware/samsung_slsi/exynos5410"
+    "target_path": "hardware/samsung_slsi/exynos5410",
     "revision": "android-4.4"
   },
   {
     "remote": "omnirom",
     "repository": "android_hardware_samsung_slsi_openmax",
-    "target_path": "hardware/samsung_slsi/openmax"
+    "target_path": "hardware/samsung_slsi/openmax",
     "revision": "android-4.4"
   },
   {
     "remote": "omnirom",
     "repository": "android_kernel_samsung_exynos5410",
-    "target_path": "kernel/samsung/exynos5410"
+    "target_path": "kernel/samsung/exynos5410",
     "revision": "android-4.4"
   }
 ]
