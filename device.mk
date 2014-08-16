@@ -49,7 +49,8 @@ PRODUCT_PACKAGES += \
     audio.primary.universal5410 \
     audio.usb.default \
     mixer_paths.xml \
-    tinymix
+    tinymix \
+    tinyplay
 
 # Bluetooth
 PRODUCT_COPY_FILES += \
