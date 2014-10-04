@@ -41,13 +41,14 @@ PRODUCT_PACKAGES += \
 
 # Audio
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/audio_policy.conf:system/etc/audio_policy.conf \
-    $(LOCAL_PATH)/configs/audio_effects.conf:system/vendor/etc/audio_effects.conf \
+    $(LOCAL_PATH)/audio/audio_policy.conf:system/etc/audio_policy.conf \
+    $(LOCAL_PATH)/audio/audio_effects.conf:system/vendor/etc/audio_effects.conf \
     $(LOCAL_PATH)/audio/silence.wav:system/etc/sound/silence.wav
 
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
     audio.primary.universal5410 \
+    audio.r_submix.default \
     audio.usb.default \
     mixer_paths.xml \
     tinymix \
@@ -75,9 +76,9 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/gps.cer:system/etc/gps.cer \
-    $(LOCAL_PATH)/configs/gps.conf:system/etc/gps.conf \
-    $(LOCAL_PATH)/configs/gps.xml:system/etc/gps.xml
+    $(LOCAL_PATH)/gps/gps.cer:system/etc/gps.cer \
+    $(LOCAL_PATH)/gps/gps.conf:system/etc/gps.conf \
+    $(LOCAL_PATH)/gps/gps.xml:system/etc/gps.xml
 
 # HW composer
 PRODUCT_PACKAGES += \
@@ -146,8 +147,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libsecril-client \
     libsecril-client-sap
-    
-# RIL
+
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.telephony.ril_class=SamsungExynos4RIL \
 	mobiledata.interfaces=pdp0,wlan0,gprs,ppp0 \
@@ -166,6 +166,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libnetcmdiface \
     macloader
+    
+PRODUCT_PROPERTY_OVERRIDES += \
+	wifi.interface=wlan0
 
 # Set default USB interface
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
@@ -184,10 +187,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # This is a 16.16 fixed point number
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.opengles.version=131072
-
-# System properties
-PRODUCT_PROPERTY_OVERRIDES += \
-    wifi.interface=wlan0
 
 # Dalvik properties
 PRODUCT_PROPERTY_OVERRIDES += \
